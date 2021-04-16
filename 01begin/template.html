@@ -11,23 +11,15 @@
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(val,k) of teacher" :key="k">
-                {{k}}: {{val}}
-            </li>
-        </ul>
-    </div> 
+        <input type="text" v-model="phone">
+    </div>
     <script>
-        let vm = new Vue({
+        var vm = new Vuu({
             el: "#app",
-            data: {
-                teacher: {
-                    math: 65,
-                    chs: 12,
-                    eng: 12,
-                }
-            }
-        })
+            data:{
+                phone:"" ,//电话号码
+            },
+    });
     </script>
 </body>
 
